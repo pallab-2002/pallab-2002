@@ -1,0 +1,136 @@
+body {
+    background-image: url(Image/bg1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+    /* color: black; */
+    text-align: center;
+  }
+
+  @keyframes change{
+    0%
+    {
+        background-image: url(Image/bg2.jpg);
+    }
+    20%
+    {
+        background-image: url(Image/bg3.jpg);
+    }
+    40%
+    {
+        background-image: url(Image/bg4.jpg);
+    }
+    60%
+    {
+        background-image: url(Image/bg5.jpg);
+    }
+    80%
+    {
+        background-image: url(Image/bg6.jpg);
+    }
+    100%
+    {
+        background-image: url(Image/bg7.jpg);
+    }
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .heading {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(230, 63, 30);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timer, .errors,
+  .accuracy, .cpm, .wpm {
+    background-color: #ccda46;
+    height: 100px;
+    width: 100px;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 20%;
+    box-shadow: black 5px 8px 5px;
+  }
+  
+  .cpm, .wpm  {
+    display: none;
+  }
+
+  .wpm_icon, .cpm_icon, .error_icon, .timer_icon, .accuracy_icon {
+    display: flex;
+    padding-left: 30%;
+    padding-right: auto;
+    height: 40px;
+    color:black;
+  }
+  
+  .header_text {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  
+  .curr_time, .curr_errors,
+  .curr_accuracy, .curr_cpm,
+  .curr_wpm {
+    font-size: 2.75rem;
+  }
+  
+  .quote {
+    background-color: #ccda46;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: black 5px 8px 5px;
+  }
+  
+  .input_area {
+    background-color: #f5f5c6;
+    height: 80px;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 20px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: black 5px 8px 5px;
+  }
+  
+  .incorrect_char {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  .correct_char {
+    color: darkgreen;
+  }
+  
+  .restart_btn {
+    display: none;
+    background-color: #326765;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: black 5px 8px 5px;
+  }
